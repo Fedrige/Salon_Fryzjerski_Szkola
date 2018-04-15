@@ -10,6 +10,8 @@ body{
   background-image: url("../img/background.png");
   background-attachment: fixed;
   background-size: cover;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 .autorzy{
   text-align: center;
@@ -24,4 +26,9 @@ body{
 .linia-odd {
   margin: 3rem;
 }
-.
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
