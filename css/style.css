@@ -1,0 +1,33 @@
+.logo {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+}
+.pic{
+  width: 100%;
+}
+body{
+  background: url("../img/background.png") fixed;
+  background-size: cover;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.autorzy{
+  text-align: center;
+}
+.lokitka{
+  font-family: 'Niconne', cursive;
+  font-size: 35px;
+}
+.gora{
+  margin-top: 100px;
+}
+.linia-odd {
+  margin: 3rem;
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
