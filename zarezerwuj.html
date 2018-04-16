@@ -1,144 +1,157 @@
 <!doctype html>
 <html lang="pl">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="css\style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
     <title>Lokitka - Salon Fryzjerski</title>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="https://resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#datepicker" ).datepicker({dateFormat: "dd-mm-yy"});
-  } );
-  </script>
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker({dateFormat: "dd-mm-yy"});
+        });
+    </script>
+</head>
+<body>
 
 
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand lokitka" href="#">Lokitka</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Oferta</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">O nas</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="porady" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Pielêgnacja
-              </a>
-              <div class="dropdown-menu" aria-labelledby="porady">
-                <a class="dropdown-item" href="#">Porada 1</a>
-                <a class="dropdown-item" href="#">Porada 2</a>
-                <a class="dropdown-item" href="#">Porada 3</a>
-                <a class="dropdown-item" href="#">Porada 4</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Galeria</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="zarezerwuj.html">Zarezerwuj</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="kontakt.html">Kontakt</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Oferta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">O nas</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="porady" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Pielï¿½gnacja
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="porady">
+                        <a class="dropdown-item" href="#">Porada 1</a>
+                        <a class="dropdown-item" href="#">Porada 2</a>
+                        <a class="dropdown-item" href="#">Porada 3</a>
+                        <a class="dropdown-item" href="#">Porada 4</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="zarezerwuj.html">Zarezerwuj</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+            </ul>
         </div>
-      </nav>
-    </header>
+    </nav>
+</header>
 
-          <main role="main">
-				<div class="row">
-              <div class="col-lg-4">
-			  
-			  </div>
-			  <div class="col-lg-4">
-			  
-		
-	
-		<form method="post" action="http://imprezowo.biz/sendit.php" name="contact_form" class="contact_form">
-			<ul>
-				<li>
-					<h2>Formularz</h2>
-					<span class="required_notification">* Pola wymagane oznaczono gwiazdk¹</span>				
-				</li>
-				<li>
-					<label for="name">Imiê i nazwisko:</label>
-					<input type="text" name="name" id="name" required maxlength="50" placeholder="Jan Kowalski" pattern="[A-Za-z¹æê³ñ¿Ÿœó¥ÆÊ£Ñ¯ŒÓ]+\s[A-Za-z¹æê³ñ¿Ÿœó¥ÆÊ£Ñ¯ŒÓ\-]+">
-					
-				</li>
-				<li>
-					<label>P³eæ:</label>
-					<input type="radio" name="sex" value="k" required >Kobieta<br>
-					<input type="radio" name="sex" value="m" required >Mê¿czyzna
-				</li>
-				<li>
-					<label for="tel">Tel kom.:</label>
-					<input type="text" name="tel" id="tel" required maxlength="11" placeholder="XXX-XXX-XXX" pattern="\d{3}-\d{3}-\d{3}">				
-					<span class="form_hint">W³aœciwy format XXX-XXX-XXX</span>
-				</li>
-				<li>
-					<label for="email">Email:</label>
-					<input type="text" name="email" id="email" required maxlength="40" placeholder="jan.kowalski@poczta.pl" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,6}">	
-					<span class="form_hint">W³aœciwy format jan.kowalski@poczta.pl</span>
-				</li>
-				
-				<li>
-					<label for="course">Wybór us³ugi:</label>
-					<select id="course" name="course" required>
-					    <option value="">Wybierz us³ugê...</option>
-						<option value="ECDL">Œcinanie</option>
-						<option value="ECDLs6">Mycie i farbowanie</option>
-						<option value="ECDLs5">Czesanie</option>
-					</select>
-				</li>
-				<li>
-					<label for="birthday">Zarezerwuj datê:</label>
-					<p>Date: <input type="text" id="datepicker"></p>
-					</li>
-				
-			
-				
-				<li>
-					<label for="city">Miasto:</label>
-					<input type="text" list="cityname" name="city" id="city" required maxlength="30" placeholder="Miasto" pattern="[A-Za-z¹æê³ñ¿Ÿœó¥ÆÊ£Ñ¯ŒÓ\-\s]+">	
-						<datalist id="cityname">
-							<option value="£ódŸ">
-							<option value="£owicz">
-							<option value="£ask">
-							<option value="Warszawa">
-							<option value="Poznañ">
-							<option value="Pabianice">							
-						</datalist>
-				</li>
-				
-				
-				<li>
-					<button type="submit" class="submit">Wyœlij</button>
-				</li>
-			</ul>
-		</form>
-			  </div>
-			  <div class="col-lg-4">
-			 
-			  </div>
-  </main>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+<main role="main">
+    <div class="row">
+        <div class="col-lg-4">
+
+        </div>
+        <div class="col-lg-4">
+
+
+            <form method="post" action="http://imprezowo.biz/sendit.php" name="contact_form" class="contact_form">
+                <ul>
+                    <li>
+                        <h2>Formularz</h2>
+                        <span class="required_notification">* Pola wymagane oznaczono gwiazdkï¿½</span>
+                    </li>
+                    <li>
+                        <label for="name">Imiï¿½ i nazwisko:</label>
+                        <input type="text" name="name" id="name" required maxlength="50" placeholder="Jan Kowalski"
+                               pattern="[A-Za-zï¿½ï¿½ï¿½ñ¿Ÿœï¿½ï¿½Ê£Ñ¯ï¿½ï¿½ï¿½]+\s[A-Za-zï¿½ï¿½ï¿½ñ¿Ÿœï¿½ï¿½Ê£Ñ¯ï¿½ï¿½ï¿½\-]+">
+
+                    </li>
+                    <li>
+                        <label>Pï¿½eï¿½:</label>
+                        <input type="radio" name="sex" value="k" required>Kobieta<br>
+                        <input type="radio" name="sex" value="m" required>Mï¿½czyzna
+                    </li>
+                    <li>
+                        <label for="tel">Tel kom.:</label>
+                        <input type="text" name="tel" id="tel" required maxlength="11" placeholder="XXX-XXX-XXX"
+                               pattern="\d{3}-\d{3}-\d{3}">
+                        <span class="form_hint">Wï¿½aï¿½ciwy format XXX-XXX-XXX</span>
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" required maxlength="40"
+                               placeholder="jan.kowalski@poczta.pl"
+                               pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,6}">
+                        <span class="form_hint">Wï¿½aï¿½ciwy format jan.kowalski@poczta.pl</span>
+                    </li>
+
+                    <li>
+                        <label for="course">Wybï¿½r usï¿½ugi:</label>
+                        <select id="course" name="course" required>
+                            <option value="">Wybierz usï¿½ugï¿½...</option>
+                            <option value="ECDL">ï¿½cinanie</option>
+                            <option value="ECDLs6">Mycie i farbowanie</option>
+                            <option value="ECDLs5">Czesanie</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="datepicker">Zarezerwuj datï¿½:</label>
+                        <p><input type="date" id="datepicker"></p>
+                    </li>
+
+
+                    <li>
+                        <label for="city">Miasto:</label>
+                        <input type="text" list="cityname" name="city" id="city" required maxlength="30"
+                               placeholder="Miasto" pattern="[A-Za-zï¿½ï¿½ï¿½ñ¿Ÿœï¿½ï¿½Ê£Ñ¯ï¿½ï¿½ï¿½\-\s]+">
+                        <datalist id="cityname">
+                            <option value="ï¿½ï¿½dï¿½">
+                            <option value="ï¿½owicz">
+                            <option value="ï¿½ask">
+                            <option value="Warszawa">
+                            <option value="Poznaï¿½">
+                            <option value="Pabianice">
+                        </datalist>
+                    </li>
+
+
+                    <li>
+                        <button type="submit" class="submit">Wyï¿½lij</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="col-lg-4">
+
+        </div>
+    </div>
+</main>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
 </html>
