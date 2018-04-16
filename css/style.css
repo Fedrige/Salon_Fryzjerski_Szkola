@@ -1,151 +1,181 @@
 .logo {
-  width: 150px;
-  height: 150px;
-  margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
 }
-.pic{
-  width: 100%;
+
+.pic {
+    width: 100%;
 }
-body{
-  background: url("../img/background.png") fixed;
-  background-size: cover;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+
+body {
+    background: url("../img/background.png") fixed;
+    background-size: cover;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
-.autorzy{
-  text-align: center;
+
+.autorzy {
+    text-align: center;
 }
-.lokitka{
-  font-family: 'Niconne', cursive;
-  font-size: 35px;
+
+.lokitka {
+    font-family: 'Niconne', cursive;
+    font-size: 35px;
 }
-.gora{
-  margin-top: 100px;
+
+.gora {
+    margin-top: 100px;
 }
+
 .linia-odd {
-  margin: 3rem;
+    margin: 3rem;
 }
 
 @media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}
-#########
-article {float:right; width:70%; margin:0 0 25px;}
-footer {clear:both; color:#FFF; background:#121212; padding:15px 0 15px 30px;}
-
-.contact_form ul{
-	list-style-type: none;
-	width: 750px;
-	margin: 0px;
-	padding: 0px;	
-}
-.contact_form li{
-	padding: 12px;
-	border-bottom: 1px solid #eee;
-}
-.contact_form li:first-child, .contact_form li:last-child{
-	border-bottom: 3px solid #777;
+    .featurette-heading {
+        margin-top: 7rem;
+    }
 }
 
-.contact_form h2{
-	display: inline;
-	margin: 0;
+article {
+    float: right;
+    width: 70%;
+    margin: 0 0 25px;
 }
 
-.required_notification{
-	display: inline;
-	float: right;
-	color: #777;	
+footer {
+    clear: both;
+    color: #FFF;
+    background: #121212;
+    padding: 15px 0 15px 30px;
 }
 
-.contact_form *{
-	padding: 5px;	
+.contact_form ul {
+    list-style-type: none;
+    width: 750px;
+    margin: 0;
+    padding: 0;
 }
 
-.contact_form label{
-	width: 150px;
-	float: left;
+.contact_form li {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
 }
 
-.contact_form input{
-	width: 200px;
-	height: 20px;
-}
-.contact_form input[type="radio"]{
-		width: 20px;
-}
-.contact_form textarea{
-	width: 300px;	
-}
-.contact_form button{
-	margin-left: 160px;	
+.contact_form li:first-child, .contact_form li:last-child {
+    border-bottom: 3px solid #777;
 }
 
-.contact_form input, .contact_form textarea, .contact_form select, .contact_form button{
-	border-radius: 5px;
-	border: 1px solid #aaa;
+.contact_form h2 {
+    display: inline;
+    margin: 0;
 }
 
-button.submit:hover{
-	opacity: .75;
-	cursor: pointer;	
+.required_notification {
+    display: inline;
+    float: right;
+    color: #777;
 }
 
-button.submit:active{
-	border: 1px solid #209020;
+.contact_form * {
+    padding: 5px;
 }
 
-.contact_form input:focus, .contact_form textarea:focus, .contact_form select:focus{
-	
-	padding-right: 60px;
+.contact_form label {
+    width: 150px;
+    float: left;
 }
 
-.contact_form input, .contact_form textarea, .contact_form select{
-	transition: padding 0.25s;
-}
-input:required,textarea:required,select:required{
-	background: url(red.png) no-repeat 98%;
-}
-.contact_form input, .contact_form textarea, .contact_form select{
-	padding-right: 30px;
-}
-.contact_form input:required:valid, .contact_form textarea:required:valid, .contact_form select:focus:valid{
-	background: url(valid.png) no-repeat 98%;
-	box-shadow: 0 0 5px #33dd33;
-}
-.contact_form input:required:invalid, .contact_form textarea:required:invalid, .contact_form select:focus:invalid{
-	background: url(invalid.png) no-repeat 98%;
-	box-shadow: 0 0 5px #dd3333;
+.contact_form input {
+    width: 200px;
+    height: 20px;
 }
 
-.contact_form select:required, .contact_form select:focus:valid,.contact_form select:focus:invalid{
-	background-position: 90%;
+.contact_form input[type="radio"] {
+    width: 20px;
+}
+
+.contact_form textarea {
+    width: 300px;
+}
+
+.contact_form button {
+    margin-left: 160px;
+}
+
+.contact_form input, .contact_form textarea, .contact_form select, .contact_form button {
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+button.submit:hover {
+    opacity: .75;
+    cursor: pointer;
+}
+
+button.submit:active {
+    border: 1px solid #209020;
+}
+
+.contact_form input:focus, .contact_form textarea:focus, .contact_form select:focus {
+
+    padding-right: 60px;
+}
+
+.contact_form input, .contact_form textarea, .contact_form select {
+    transition: padding 0.25s;
+}
+
+input:required, textarea:required, select:required {                /* NIE MA PLIKÓW "red.png", "invalid.png" oraz "valid.png" */
+    background: url(red.png) no-repeat 98%;
+}
+
+.contact_form input, .contact_form textarea, .contact_form select {
+    padding-right: 30px;
+    height: auto;
+}
+
+.contact_form input:required:valid, .contact_form textarea:required:valid, .contact_form select:focus:valid {
+    background: url(valid.png) no-repeat 98%;
+    box-shadow: 0 0 5px #33dd33;
+}
+
+.contact_form input:required:invalid, .contact_form textarea:required:invalid, .contact_form select:focus:invalid {
+    background: url(invalid.png) no-repeat 98%;
+    box-shadow: 0 0 5px #dd3333;
+}
+
+.contact_form select:required, .contact_form select:focus:valid, .contact_form select:focus:invalid {
+    background-position: 90%;
 }
 
 .form_hint {
-	background: #dd3333;
-	color: #ffffff;
-	border-radius: 3px;
-	margin-left: 10px;
-	z-index: 999;
-	position: absolute;
-	display: none;
+    background: #dd3333;
+    color: #ffffff;
+    border-radius: 3px;
+    margin-left: 10px;
+    z-index: 999;
+    position: absolute;
+    display: none;
 }
 
-.form_hint:before{
-	content: "\25C0";
-	color: #dd3333;
-	position: absolute;
-	top: 1px;
-	left: -7px;
+.form_hint:before {
+    content: "\25C0";
+    color: #dd3333;
+    position: absolute;
+    top: 1px;
+    left: -7px;
 }
 
-.contact_form input:focus + .form_hint{display: inline;}
-.contact_form input:required:valid + .form_hint{
-	background: #33dd33;
+.contact_form input:focus + .form_hint {
+    display: inline;
 }
-.contact_form input:required:valid + .form_hint:before{
-	color: #33dd33;
+
+.contact_form input:required:valid + .form_hint {
+    background: #33dd33;
+}
+
+.contact_form input:required:valid + .form_hint:before {
+    color: #33dd33;
 }

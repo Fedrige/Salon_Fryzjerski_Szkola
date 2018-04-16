@@ -1,110 +1,115 @@
 ﻿<!doctype html>
 <html lang="pl">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="css\style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
     <title>Lokitka - Salon Fryzjerski</title>
-	<style>
-	#przerwa{
-	height:100px;
-	
-	}
-	</style>
-  </head>
-  <body>
+</head>
+<body>
 
-	
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand lokitka" href="#">Lokitka</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand lokitka" href="index.html">Lokitka</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Oferta</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">O nas</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="porady" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Pielęgnacja
-              </a>
-              <div class="dropdown-menu" aria-labelledby="porady">
-                <a class="dropdown-item" href="#">Porada 1</a>
-                <a class="dropdown-item" href="#">Porada 2</a>
-                <a class="dropdown-item" href="#">Porada 3</a>
-                <a class="dropdown-item" href="#">Porada 4</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Galeria</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="zarezerwuj.html">Zarezerwuj</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="kontakt.html">Kontakt</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Oferta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">O nas</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="porady" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Pielęgnacja
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="porady">
+                        <a class="dropdown-item" href="#">Porada 1</a>
+                        <a class="dropdown-item" href="#">Porada 2</a>
+                        <a class="dropdown-item" href="#">Porada 3</a>
+                        <a class="dropdown-item" href="#">Porada 4</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="zarezerwuj.html">Zarezerwuj</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+            </ul>
         </div>
-      </nav>
-    </header>
+    </nav>
+</header>
 
-          <main role="main">
-				<div class="row">
-              <div class="col-lg-4">
-			  
-			  </div>
-			  <div class="col-lg-4">
-			  <article>
-		
-	
-		<form method="post" action="http://imprezowo.biz/sendit.php" name="contact_form" class="contact_form">
-			<ul>
-				<li>
-					<h2>Formularz kontaktowy</h2>
-					<span class="required_notification">*Pola wymagane oznaczono gwiazdką</span>
-				</li>
-				<li>
-					<label for="name">Imię i nazwisko</label>
-					<input type="text"name="name" id="name" required maxlength="50" placeholder="Jan Kowalski" pattern="[A-Za-z���񿟜�ƌ��ӯ��]+\s[A-Za-z���񿟜�ƌ��ӯ��\-]+">
-				</li>
-				<li>
-					<label for="tel">Tel kom.</label>
-					<input type="text"name="tel" id="tel" required maxlength="11" placeholder="XXX-XXX-XXX" pattern="\d{3}-\d{3}-\d{3}">
-					<span class="form_hint">Właściwy format XXX-XXX-XXX</span>
-				</li>
-				<li>
-					<label for="email">Email</label>
-					<input type="text"name="email" id="email" required maxlength="40" placeholder="jan.kowalski@poczta.pl" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,6}">
-					<span class="form_hint">Właściwy format jan.kowalski@poczta.pl </span>
-				</li>
-				<li>
-					<label for="message">Wiadomość:</label>
-					<textarea name="message" cols="40" rows="6" maxlength="1000"></textarea>
-				</li>
-				<li>
-					<button type="submit" class="submit">Wyślij</button>
-				</li>
-			</ul>
-		</form>
-	</article>
-			  </div>
-			  <div class="col-lg-4">
-			 
-			  </div>
-			  
-  </main>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+<main role="main">
+    <div class="row">
+        <div class="col-lg-4">
+
+        </div>
+        <div class="col-lg-4">
+
+
+            <form method="post" action="#" name="contact_form" class="contact_form">
+                <ul>
+                    <li>
+                        <h2>Formularz kontaktowy</h2>
+                        <span class="required_notification">*Pola wymagane oznaczono gwiazdką</span>
+                    </li>
+                    <li>
+                        <label for="name">Imię i nazwisko</label>
+                        <input type="text" name="name" id="name" required maxlength="50" placeholder="Jan Kowalski"
+                               pattern="[A-Za-z���񿟜�ƌ��ӯ��]+\s[A-Za-z���񿟜�ƌ��ӯ��\-]+">
+                    </li>
+                    <li>
+                        <label for="tel">Tel kom.</label>
+                        <input type="text" name="tel" id="tel" required maxlength="11" placeholder="XXX-XXX-XXX"
+                               pattern="\d{3}-\d{3}-\d{3}">
+                        <span class="form_hint">Właściwy format XXX-XXX-XXX</span>
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" required maxlength="40"
+                               placeholder="jan.kowalski@poczta.pl"
+                               pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,6}">
+                        <span class="form_hint">Właściwy format jan.kowalski@poczta.pl </span>
+                    </li>
+                    <li>
+                        <label for="message">Wiadomość:</label>
+                        <textarea id="message" name="message" cols="40" rows="6" maxlength="1000"></textarea>
+                    </li>
+                    <li>
+                        <button type="submit" class="submit">Wyślij</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="col-lg-4">
+
+        </div>
+    </div>
+</main>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
 </html>
