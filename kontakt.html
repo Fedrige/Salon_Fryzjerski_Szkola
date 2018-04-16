@@ -29,7 +29,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="porady" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Pielƒôgnacja
+                PielÍgnacja
               </a>
               <div class="dropdown-menu" aria-labelledby="porady">
                 <a class="dropdown-item" href="#">Porada 1</a>
@@ -53,59 +53,48 @@
     </header>
 
           <main role="main">
-
-              <div class="row mx-auto" style="width: 100%">
-                <div class="col-md-4 offset-md-1">
-                  <h2 class="text-center featurette-heading">
-                    Zapraszamy
-                  </h2>
-                  <p class="lead text-center">
-                    Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna,vel scelerisque nisl consectetur.Fusce dapibus, tellus ac cursus commodo.
-                  </p>
-                </div>
-                <div class="col-md-5 offset-md-1 sciskanie">
-                  <img class="featurette-image img-fluid mx-auto rounded"  alt="zdjecie przy zapraszamy" style="width: 600px; height: 400px;" src="img/barber1.jpg">
-                </div>
-              </div>
-
-            <hr class="linia-odd"> <!-- linia oddzielajƒÖca -->
-
-            <div class="row mx-auto" style="width: 100%">
-              <div class="col-md-4 offset-md-1">
-                <img class="featurette-image img-fluid mx-auto rounded"  alt="zdjecie przy zapraszamy" style="width: 600px; height: 400px;" src="img/barber1.jpg">
-              </div>
-              <div class="col-md-5 offset-md-1">
-                <h2 class="text-center featurette-heading">
-                  Zapraszamy
-                </h2>
-                <p class="lead text-center">
-                  Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna,vel scelerisque nisl consectetur.Fusce dapibus, tellus ac cursus commodo.
-                </p>
-              </div>
-            </div>
-
-            <hr class="linia-odd">
-
-      <div class="container autorzy">
-        <h1>Co≈õ o naszym zespole</h1>   <!-- nag≈Ç√≥wek nad naszymi zdjƒôciami -->
-        <div class="row">
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="img\adam.jpg" alt="zdjecie adama" width="140" height="140">
-            <h2>Adam Nie≈õmia≈Çek</h2>
-            <p>Jestem fryzjerem od 50 lat, mam do≈õwiadczenie w strzy≈ºeniu ma≈Çych dzieci. Dla wszystkich grzecznych dzieci mam ciasteczko, a dla niegrzecznych du≈ºƒÖ r√≥zgƒô.</p>
-          </div>
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="img\patryk.jpg" alt="zdjecie patryka" width="140" height="140">
-            <h2>Patryk Teskowski</h2>
-            <p>Jestem kura pi≈Çkarzem a nie fryzjerem!</p>
-          </div>
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="img\jarek.jpg" alt="zdjecie jarka" width="140" height="140">
-            <h2>Jaros≈Çaw Burda</h2>
-            <p>Zawsze kocha≈Çem strzyc du≈ºych ch≈Çopc√≥w, przez to zami≈Çowanie sta≈Çem siƒô fryzjerem, przyjd≈∫cie do mnie je≈õli chcecie spƒôdziƒá kilka mi≈Çych chwil.</p>
-          </div>
-      </div>
-    </div>
+				<div class="row">
+              <div class="col-lg-4">
+			  
+			  </div>
+			  <div class="col-lg-4">
+			  <article>
+		
+	
+		<form method="post" action="http://imprezowo.biz/sendit.php" name="contact_form" class="contact_form">
+			<ul>
+				<li>
+					<h2>Formularz kontaktowy</h2>
+					<span class="required_notification">*Pola wymagane oznaczono gwiazdkπ</span>
+				</li>
+				<li>
+					<label for="name">ImiÍ i nazwisko</label>
+					<input type="text"name="name" id="name" required maxlength="50" placeholder="Jan Kowalski" pattern="[A-Za-zπÊÍ≥ÒøüúÛ•∆å£ ”Øè—]+\s[A-Za-zπÊÍ≥ÒøüúÛ•∆å£ ”Øè—\-]+">
+				</li>
+				<li>
+					<label for="tel">Tel kom.</label>
+					<input type="text"name="tel" id="tel" required maxlength="11" placeholder="XXX-XXX-XXX" pattern="\d{3}-\d{3}-\d{3}">
+					<span class="form_hint">W≥aúciwy format XXX-XXX-XXX</span>
+				</li>
+				<li>
+					<label for="email">Email</label>
+					<input type="text"name="email" id="email" required maxlength="40" placeholder="jan.kowalski@poczta.pl" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,6}">
+					<span class="form_hint">W≥aúciwy format jan.kowalski@poczta.pl </span>
+				</li>
+				<li>
+					<label for="message">WiadomoúÊ:</label>
+					<textarea name="message" cols="40" rows="6" maxlength="1000"></textarea>
+				</li>
+				<li>
+					<button type="submit" class="submit">Wyúlij</button>
+				</li>
+			</ul>
+		</form>
+	</article>
+			  </div>
+			  <div class="col-lg-4">
+			 
+			  </div>
   </main>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
