@@ -1,0 +1,10 @@
+body {
+    background: url("../img/background.png") fixed;
+    background-size: cover;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.lokitka {
+    font-family: 'Niconne', cursive;
+    font-size: 35px;
+}
