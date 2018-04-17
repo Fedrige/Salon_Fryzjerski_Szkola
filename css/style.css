@@ -1,4 +1,4 @@
-.logo {
+﻿.logo {
     width: 150px;
     height: 150px;
     margin-right: 20px;
@@ -38,22 +38,12 @@ body {
     }
 }
 
-article {
-    float: right;
-    width: 70%;
-    margin: 0 0 25px;
-}
 
-footer {
-    clear: both;
-    color: #FFF;
-    background: #121212;
-    padding: 15px 0 15px 30px;
-}
+
 
 .contact_form ul {
     list-style-type: none;
-    width: 750px;
+    width: auto;
     margin: 0;
     padding: 0;
 }
@@ -68,8 +58,7 @@ footer {
 }
 
 .contact_form h2 {
-    display: inline;
-    margin: 0;
+    text-align: center;
 }
 
 .required_notification {
@@ -101,7 +90,7 @@ footer {
 }
 
 .contact_form button {
-    margin-left: 160px;
+    margin-left: 150px;
 }
 
 .contact_form input, .contact_form textarea, .contact_form select, .contact_form button {
