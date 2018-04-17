@@ -10,7 +10,7 @@
     <link href="css\style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
     <title>Lokitka - Salon Fryzjerski</title>
-    
+
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -21,7 +21,7 @@
         });
 		function sprawdz(){
 	var telefon = document.getElementById("telefon").value;
-	
+
 	var reg = /^[0-9]{3}-[0-9]{3}-[0-9]{3}$/g;
 if (!reg.test(telefon)) {
 	alert("Zły format nr telefonu");
@@ -101,7 +101,7 @@ else {
                     </li>
 					<li>
 						<label for="nazwisko">Nazwisko:</label>
-						<input type="text" name="nazwisko" id="nazwisko" required maxlength="50" placeholder="Jan Kowalski"
+						<input type="text" name="nazwisko" id="nazwisko" required maxlength="50" placeholder="Kowalski"
                                pattern="[A-ząśżźćęółń]+\s*[A-ząśżźćęółń]+">
 
 					</li>
