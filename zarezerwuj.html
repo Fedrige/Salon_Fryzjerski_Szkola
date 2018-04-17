@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
     <title>Lokitka - Salon Fryzjerski</title>
 
-	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -19,21 +19,22 @@
         $(function () {
             $("#datepicker").datepicker({dateFormat: "dd-mm-yy"});
         });
-		function sprawdz(){
-	var telefon = document.getElementById("telefon").value;
 
-	var reg = /^[0-9]{3}-[0-9]{3}-[0-9]{3}$/g;
-if (!reg.test(telefon)) {
-	alert("Zły format nr telefonu");
-	document.getElementById("telefon").style.background = "red";
-	return false;
-	}
-else {
-	alert("Poprawny nr telefonu");
-	document.getElementById("telefon").style.background = "green";
-	return false;
-}
-};
+        function sprawdz() {
+            const telefon = document.getElementById("telefon").value;
+
+            const reg = /^[0-9]{3}-[0-9]{3}-[0-9]{3}$/g;
+            if (!reg.test(telefon)) {
+                alert("Zły format nr telefonu");
+                document.getElementById("telefon").style.background = "red";
+                return false;
+            }
+            else {
+                alert("Poprawny nr telefonu");
+                document.getElementById("telefon").style.background = "green";
+                return false;
+            }
+        }
     </script>
 </head>
 <body>
@@ -92,19 +93,19 @@ else {
                 <ul>
                     <li>
                         <h2>Rezerwacja</h2>
-					</li>
+                    </li>
                     <li>
-                        <label for="name">Imię:</label>
+                        <label for="imie">Imię:</label>
                         <input type="text" name="imie" id="imie" required maxlength="50" placeholder="Jan"
                                pattern="[A-ząśżźćęółń]+\s*[A-ząśżźćęółń]+">
 
                     </li>
-					<li>
-						<label for="nazwisko">Nazwisko:</label>
-						<input type="text" name="nazwisko" id="nazwisko" required maxlength="50" placeholder="Kowalski"
+                    <li>
+                        <label for="nazwisko">Nazwisko:</label>
+                        <input type="text" name="nazwisko" id="nazwisko" required maxlength="50" placeholder="Kowalski"
                                pattern="[A-ząśżźćęółń]+\s*[A-ząśżźćęółń]+">
 
-					</li>
+                    </li>
                     <li>
                         <label>Płeć:</label>
                         <input title="Kobieta" type="radio" value="k">Kobieta<br>
@@ -132,27 +133,27 @@ else {
                             <option value="">Wybierz usługę...</option>
                             <option value="scinanie">Ścinanie</option>
                             <option value="mycie">Mycie i farbowanie</option>
-							<option value="czesanie">Czesanie</option>
+                            <option value="czesanie">Czesanie</option>
                         </select>
                     </li>
                     <li>
                         <label for="datepicker">Zarezerwuj datę:</label>
                         <input type="date" name="datepicker" id="datepicker" required>
                     </li>
-					<li>
-					<label for="godzina">Wybierz godzinę: </label>
-					<select name="godzina">
-						<option>Wybierz godzinę: </option>
-						<option>10:00</option>
-						<option>11:00</option>
-						<option>12:00</option>
-						<option>13:00</option>
-						<option>14:00</option>
-						<option>15:00</option>
-						<option>16:00</option>
-						<option>17:00</option>
-					</select>
-					</li>
+                    <li>
+                        <label for="godzina">Wybierz godzinę: </label>
+                        <select id="godzina" name="godzina">
+                            <option>Wybierz godzinę:</option>
+                            <option>10:00</option>
+                            <option>11:00</option>
+                            <option>12:00</option>
+                            <option>13:00</option>
+                            <option>14:00</option>
+                            <option>15:00</option>
+                            <option>16:00</option>
+                            <option>17:00</option>
+                        </select>
+                    </li>
                     <li>
                         <button type="submit" class="submit">Wyślij</button>
                     </li>
