@@ -67,11 +67,15 @@
                 <ul>
                     <li>
                         <h2>Formularz kontaktowy</h2>
-                        <span class="required_notification">*Pola wymagane oznaczono gwiazdką</span>
                     </li>
                     <li>
-                        <label for="name">Imię i nazwisko</label>
-                        <input type="text" name="name" id="name" required maxlength="50" placeholder="Jan Kowalski"
+                        <label for="imie">Imię</label>
+                        <input type="text" name="name" id="name" required maxlength="50" placeholder="Jan"
+                               pattern="[A-ząśżźćęółń]+\s*[A-ząśżźćęółń]+">
+                    </li>
+					<li>
+                        <label for="nazwisko">Nazwisko</label>
+                        <input type="text" name="name" id="name" required maxlength="50" placeholder="Kowalski"
                                pattern="[A-ząśżźćęółń]+\s*[A-ząśżźćęółń]+">
                     </li>
                     <li>
