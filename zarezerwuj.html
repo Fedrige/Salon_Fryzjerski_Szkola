@@ -19,22 +19,6 @@
         $(function () {
             $("#datepicker").datepicker({dateFormat: "dd-mm-yy"});
         });
-
-        function sprawdz() {
-            const telefon = document.getElementById("telefon").value;
-
-            const reg = /^[0-9]{3}-[0-9]{3}-[0-9]{3}$/g;
-            if (!reg.test(telefon)) {
-                alert("Zły format nr telefonu");
-                document.getElementById("telefon").style.background = "red";
-                return false;
-            }
-            else {
-                alert("Poprawny nr telefonu");
-                document.getElementById("telefon").style.background = "green";
-                return false;
-            }
-        }
     </script>
 </head>
 <body>
