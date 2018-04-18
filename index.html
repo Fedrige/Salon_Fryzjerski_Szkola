@@ -21,6 +21,37 @@
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+    <SCRIPT language="JavaScript">
+<!-- W3e JAVAScript Preset. Original banner code by Timothy  (timothy@essex1.com)//-->
+Message = "ZAPRASZAMY w godzinach 10-18 od poniedziałku do piątku!!!!";
+Size = 250;
+Pos=Size;
+Speed = 1;
+
+function Banner()
+{
+   Spaces = "";
+   for (count=0; count<Pos; count++)
+      Spaces+= " ";
+   if (Pos < 1)
+   {
+      document.Banner.Bar.value = Message.substring(Math.abs(Pos), Message.length);
+      if (Pos+Message.length < 1)
+         {Pos = Size;}
+   }
+   else
+      document.Banner.Bar.value = Spaces + Message;
+   Pos-=Speed;
+   setTimeout('Banner();', 20);
+}
+
+</SCRIPT>
+
+<FORM NAME=Banner>
+<INPUT Size=75 Name=Bar Value="">
+</FORM>
+<script>Banner();</script>
+
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
