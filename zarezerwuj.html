@@ -113,11 +113,15 @@
 
                     <li>
                         <label for="hair">Wybór usługi:</label>
-                        <select required>
-                            <option value="">Wybierz usługę:</option>
-                            <option value="scinanie">Ścinanie</option>
-                            <option value="mycie">Mycie i farbowanie</option>
-                            <option value="czesanie">Czesanie</option>
+                        <select name="nazwaUsługi">
+                          <?php
+                            $link = mysqli_connect('localhost','root','baza_Salon_Fryzjerski') or die ('Błąd: Nie można połączyć z bazą danych!!');
+                            $zapytanie = $link->query("SELECT * FORM Usługi");
+                            while($Usługi = mysqli_fetch_array($zapytanie))
+                            {
+                              echo '<option value="'.$Usługi['Usługi'].'">'.$Usługi['Usługi'].'</option>;
+                            }
+                            ?>
                         </select>
                     </li>
                     <li>
