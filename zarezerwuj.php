@@ -102,20 +102,17 @@
                     <li>
                         <label for="nazwaUsługi">Wybór usługi:</label>
                         <select id="nazwaUsługi" name="nazwaUsługi"> <!-- TODO: Fix php scripts -->
-                            <?php
-                            $link = mysqli_connect('localhost', 'root', 'baza_Salon_Fryzjerski') or die ('Błąd: Nie można połączyć z bazą danych!!');
-                            $zapytanie = $link->query("SELECT * FORM Usługi");
-                            while ($Uslugi = mysqli_fetch_array($zapytanie)) {
-                                echo '<option value="' . $Uslugi['Uslugi'] . '">' . $Uslugi['Uslugi'] . '</option>';
-                            };
-                            ?>
+                            <?php require_once "jarek.php"; ?>
                         </select>
                     </li>
                     <li>
                         <label for="datepicker">Zarezerwuj datę:</label>
                         <input type="date" name="datepicker" id="datepicker" required>
                     </li>
-
+					<li>
+                        <label for="date">Zarezerwuj datę2:</label>
+                        <input type="date" id="date" required>
+                    </li>
                     <li>
                         <label for="hour">Wybierz godzinę: </label>
                         <select id="hour" name="hour" required>
