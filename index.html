@@ -1,141 +1,165 @@
 <!doctype html>
 <html lang="pl">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="css\style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
-    <title>Lokitka - Salon Fryzjerski</title>
-</head>
-<body>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link href="css\style.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
+      <title>Lokitka - Salon Fryzjerski</title>
+  </head>
+  <body>
 
 
-<header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand lokitka" href="index.html">Lokitka</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <a class="navbar-brand lokitka" href="index.html">Lokitka</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                  aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Oferta</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pielegnacja.html">Pielęgnacja</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="galeria.html">Galeria</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="zarezerwuj.html">Zarezerwuj</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="kontakt.html">Kontakt</a>
-                </li>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Oferta</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="pielegnacja.html">Pielęgnacja</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="zarezerwuj.html">Zarezerwuj</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="kontakt.html">Kontakt</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+
+  <main role="main">
+      <div class="row mx-auto" style="width: 100%">
+          <div class="col-md-4 offset-md-1">
+              <h2 class="text-center margin-gora">
+                  Zapraszamy
+              </h2>
+              <p class="lead text-center">
+                  Salon Lokitka to zachwycające urokiem i elegancją miejsce, gdzie zarówno każda kobieta jak i mężczyzna poczuje się wyjątkowo.
+                   Bajeczne, dopracowane w każdym detalu i kusząco zmysłowe wnętrze daje poczucie wykwintności każdego ruchu wykonanego przez fryzjerskie ręce.
+              </p>
+              <button type="button" class="btn btn-secondary btn-lg btn-block d-none d-xl-block" onclick="scrollwim()">Poznaj nas</button>
+          </div>
+          <div class="col-md-5 offset-md-1">
+              <img class="img-fluid rounded obrazek" alt="zdjecie przy zapraszamy"
+                   style="width: 600px; height: 400px;" src="img/17.jpg">
+          </div>
+      </div>
+
+      <hr class="linia-odd"> <!-- linia oddzielająca -->
+
+      <div class="row mx-auto">
+          <div class="col-md-5 offset-md-1">
+              <img class="img-fluid rounded obrazek" alt="zdjecie przy zapraszamy"
+                   style="width: 600px; height: 400px;" src="img/barber1.jpg">
+          </div>
+          <div class="col-md-4 offset-md-1">
+            <ul class="text-center list-inline">
+              <h2 class="text-center gora">
+                  DZIAŁAMY Z GŁOWĄ!
+              </h2>
             </ul>
-        </div>
-    </nav>
-</header>
-
-<main role="main">
-    <div class="row mx-auto" style="width: 100%">
-        <div class="col-md-4 offset-md-1">
-            <h2 class="text-center margin-gora">
-                Zapraszamy
-            </h2>
-            <p class="lead text-center">
-                Salon Lokitka to zachwycające urokiem i elegancją miejsce, gdzie zarówno każda kobieta jak i mężczyzna poczuje się wyjątkowo.
-                 Bajeczne, dopracowane w każdym detalu i kusząco zmysłowe wnętrze daje poczucie wykwintności każdego ruchu wykonanego przez fryzjerskie ręce.
-            </p>
-            <button type="button" class="btn btn-secondary btn-lg btn-block d-none d-xl-block" onclick="scrollwim()">Poznaj nas</button>
-        </div>
-        <div class="col-md-5 offset-md-1">
-            <img class="img-fluid rounded obrazek" alt="zdjecie przy zapraszamy"
-                 style="width: 600px; height: 400px;" src="img/17.jpg">
-        </div>
-    </div>
-
-    <hr class="linia-odd"> <!-- linia oddzielająca -->
-
-    <div class="row mx-auto">
-        <div class="col-md-5 offset-md-1">
-            <img class="img-fluid rounded obrazek" alt="zdjecie przy zapraszamy"
-                 style="width: 600px; height: 400px;" src="img/barber1.jpg">
-        </div>
-        <div class="col-md-4 offset-md-1">
-          <ul class="text-center list-inline">
-            <h2 class="text-center gora">
-                DZIAŁAMY Z GŁOWĄ!
-            </h2>
-          </ul>
-            <ul class="lead text-center list-inline" style="list-style-type: none;">
-              <a class="font-weight-bold">Technika</a>
-              <li class="list-inline-item">
-                „Modelowanie przez cięcie” sprawia, że Twoja fryzura utrzymuje się nie tylko po wyjściu z salonu.
-            </li>
-          </ul>
-            <ul class="lead text-center list-inline" style="list-style-type: none;">
-              <a class="font-weight-bold">Personalizacja</a>
-              <li class="list-inline-item">
-                Ty i nikt inny! Ważne jest, aby dopasować kolor włosów do barwy oczu i cery, ale także do naszego stylu życia.
+              <ul class="lead text-center list-inline" style="list-style-type: none;">
+                <a class="font-weight-bold">Technika</a>
+                <li class="list-inline-item">
+                  „Modelowanie przez cięcie” sprawia, że Twoja fryzura utrzymuje się nie tylko po wyjściu z salonu.
               </li>
             </ul>
-            <ul class="lead text-center list-inline" style="list-style-type: none;">
-              <a class="font-weight-bold">Bezpieczeństwo</a>
-              <li class="list-inline-item">
-                Farby, których używamy są delikatne i dbają o zdrowy wygląd Twoich włosów.
-              </li>
-            </ul>
-        </div>
-    </div>
+              <ul class="lead text-center list-inline" style="list-style-type: none;">
+                <a class="font-weight-bold">Personalizacja</a>
+                <li class="list-inline-item">
+                  Ty i nikt inny! Ważne jest, aby dopasować kolor włosów do barwy oczu i cery, ale także do naszego stylu życia.
+                </li>
+              </ul>
+              <ul class="lead text-center list-inline" style="list-style-type: none;">
+                <a class="font-weight-bold">Bezpieczeństwo</a>
+                <li class="list-inline-item">
+                  Farby, których używamy są delikatne i dbają o zdrowy wygląd Twoich włosów.
+                </li>
+              </ul>
+          </div>
+      </div>
 
-    <hr class="linia-odd">
+      <hr class="linia-odd">
 
-    <div class="container autorzy">
-        <h1>Nasi styliści</h1>   <!-- nagłówek nad naszymi zdjęciami -->
-        <div class="row margin-gora">
-            <div class="col-lg-4">
-                <img class="rounded-circle" src="img\adam.jpg" alt="zdjecie adama" width="140" height="140">
-                <h2>Adam Nieśmiałek</h2>
-                <p>Dzięki fryzjerstwu spełniam się w tym, co daje mi radość.
-                   Inspiruję się najnowszymi trendami, ale też czerpię z wiedzy i doświadczenia osób, z którymi mam przyjemność współpracować.
-               </p>
-            </div>
-            <div class="col-lg-4">
-                <img class="rounded-circle" src="img\patryk.jpg" alt="zdjecie patryka" width="140" height="140">
-                <h2>Patryk Teskowski</h2>
-                <p>Mój wrodzony perfekcjonizm jest gwarancją najwyższej jakości usług.
-                   Jeśli chcesz coś w sobie zmienić, a nie masz pomysłu, to zawsze służę poradą.
-                   Z ogromną przyjemnością zajmuję się zabiegami pielęgnacyjnymi.
-                </p>
-            </div>
-            <div class="col-lg-4">
-                <img class="rounded-circle" src="img\jarek.jpg" alt="zdjecie jarka" width="140" height="140">
-                <h2>Jarosław Burda</h2>
-                <p>Fryzjerstwo to moja pasja!
-                    Odkryta kilka lat temu i cały czas zgłębiana. Zajmuję się całym spektrum usług dla Pań i Panów.
-                    W strzyżeniu i koloryzacji stawiam na pełne zrozumienie potrzeb klienta.
-                </p>
-            </div>
-        </div>
+      <div class="container autorzy">
+          <h1>Nasi styliści</h1>   <!-- nagłówek nad naszymi zdjęciami -->
+          <div class="row margin-gora">
+              <div class="col-lg-4">
+                  <img class="rounded-circle" src="img\adam.jpg" alt="zdjecie adama" width="140" height="140">
+                  <h2>Adam Nieśmiałek</h2>
+                  <p>Dzięki fryzjerstwu spełniam się w tym, co daje mi radość.
+                     Inspiruję się najnowszymi trendami, ale też czerpię z wiedzy i doświadczenia osób, z którymi mam przyjemność współpracować.
+                 </p>
+              </div>
+              <div class="col-lg-4">
+                  <img class="rounded-circle" src="img\patryk.jpg" alt="zdjecie patryka" width="140" height="140">
+                  <h2>Patryk Teskowski</h2>
+                  <p>Mój wrodzony perfekcjonizm jest gwarancją najwyższej jakości usług.
+                     Jeśli chcesz coś w sobie zmienić, a nie masz pomysłu, to zawsze służę poradą.
+                     Z ogromną przyjemnością zajmuję się zabiegami pielęgnacyjnymi.
+                  </p>
+              </div>
+              <div class="col-lg-4">
+                  <img class="rounded-circle" src="img\jarek.jpg" alt="zdjecie jarka" width="140" height="140">
+                  <h2>Jarosław Burda</h2>
+                  <p>Fryzjerstwo to moja pasja!
+                      Odkryta kilka lat temu i cały czas zgłębiana. Zajmuję się całym spektrum usług dla Pań i Panów.
+                      W strzyżeniu i koloryzacji stawiam na pełne zrozumienie potrzeb klienta.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </main>
+  <footer class="blog-footer">
+    <div class="row container-fluid">
+      <div class="col-lg-5 offset-lg-1">
+        <p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2470.5868709121432!2d19.450646648662005!3d51.74059130144655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a34e64ab91f4f%3A0xfa91387b75272378!2sZesp%C3%B3%C5%82+Szk%C3%B3%C5%82+Ponadgimnazjalnych+nr+9+im.+Komisji+Edukacji+Narodowej!5e0!3m2!1spl!2spl!4v1487633554613" width="500" height="350" frameborder="0" class="d-none d-sm-block"></iframe>
+        </p>
+      </div>
+      <div class="col-lg-4 offset-lg-2 footer-napis">
+        <h2 class="text-white">
+          Kontakt
+        </h2>
+        <p class="text-white">
+          Salon Fryzjerski Lokitka
+          <br>
+          al. Politechniki 38
+          <br>
+          Tel. - 566-566-566
+          <br>
+          e-mail - Lokitka@fryzjernia.pl
+        </p>
+        <img class="img-fluid" src="img\logoSalonu1.png" alt="logo">
+      </div>
     </div>
-</main>
-<script src="js/main.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-</body>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
+  </body>
 </html>

@@ -2,7 +2,6 @@ body {
     background: url("../img/background.png") fixed;
     background-size: cover;
     padding-top: 6rem;
-    padding-bottom: 6rem;
 }
 
 .autorzy {
@@ -38,4 +37,15 @@ body {
     width: 400px !important;
     height: 300px !important;
   }
+  .footer-napis{
+    text-align: center;
+  }
+}
+.blog-footer {
+  padding: 2.5rem 0;
+  background-color: #343a40;
+}
+.mapa {
+  width: 450px;
+  height: 300px;
 }

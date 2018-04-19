@@ -21,3 +21,22 @@
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
 }
+.gora {
+  margin-top: 2rem;
+}
+.blog-footer {
+  padding: 2.5rem 0;
+  background-color: #343a40;
+}
+.mapa {
+  width: 450px;
+  height: 300px;
+}
+.margin-gora {
+  margin-top: 2rem;
+}
+@media (max-width: 768px) {
+  .footer-napis{
+    text-align: center;
+  }
+}
