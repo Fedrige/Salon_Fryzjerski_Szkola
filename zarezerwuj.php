@@ -55,7 +55,7 @@
                     <a class="nav-link" href="galeria.html">Galeria</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="zarezerwuj.html">Zarezerwuj</a>
+                    <a class="nav-link" href="zarezerwuj.php">Zarezerwuj</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="kontakt.html">Kontakt</a>
@@ -118,7 +118,7 @@
                             $link = mysqli_connect('localhost', 'root', 'baza_Salon_Fryzjerski') or die ('Błąd: Nie można połączyć z bazą danych!!');
                             $zapytanie = $link->query("SELECT * FORM Usługi");
                             while ($Uslugi = mysqli_fetch_array($zapytanie)) {
-                                echo '<option value="' . $Uslugi['Uslugi'] . '">' . $Uslugi['Uslugi'] . '</option>;
+                                echo '<option value="' . $Uslugi['Uslugi'] . '">' . $Uslugi['Uslugi'] . '</option>';
                             };
                             ?>
                         </select>
@@ -128,20 +128,20 @@
                         <input type="date" name="datepicker" id="datepicker" required>
                     </li>
 
-					<li>
-					<label for="hour">Wybierz godzinę: </label>
-					<select id="hour" name="hour" required>
-						<option value="" >Wybierz godzinę: </option>
-						<option value="10">10:00</option>
-						<option value="11">11:00</option>
-						<option value="12">12:00</option>
-						<option value="13">13:00</option>
-						<option value="14">14:00</option>
-						<option value="15">15:00</option>
-						<option value="16">16:00</option>
-						<option value="17">17:00</option>
-					</select>
-					</li>
+                    <li>
+                        <label for="hour">Wybierz godzinę: </label>
+                        <select id="hour" name="hour" required>
+                            <option value="">Wybierz godzinę:</option>
+                            <option value="10">10:00</option>
+                            <option value="11">11:00</option>
+                            <option value="12">12:00</option>
+                            <option value="13">13:00</option>
+                            <option value="14">14:00</option>
+                            <option value="15">15:00</option>
+                            <option value="16">16:00</option>
+                            <option value="17">17:00</option>
+                        </select>
+                    </li>
 
                     <li>
                         <button type="submit" class="submit">Wyślij</button>
