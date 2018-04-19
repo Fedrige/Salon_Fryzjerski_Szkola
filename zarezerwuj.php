@@ -36,9 +36,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Oferta</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">O nas</a>
-                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="porady" data-toggle="dropdown" aria-haspopup="true"
                        aria-expanded="false">
