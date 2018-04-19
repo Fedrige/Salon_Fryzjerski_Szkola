@@ -3,27 +3,33 @@ body {
     background-size: cover;
     padding-top: 6rem;
 }
+
 .lokitka {
     font-family: 'Niconne', cursive;
     font-size: 35px;
 }
+
 .blog-footer {
-  padding: 2.5rem 0;
-  background-color: #343a40;
+    padding: 2.5rem 0;
+    background-color: #343a40;
 }
+
 .mapa {
-  width: 450px;
-  height: 300px;
+    width: 450px;
+    height: 300px;
 }
+
 .margin-gora {
-  margin-top: 2rem;
+    margin-top: 2rem;
 }
+
 @media (max-width: 768px) {
-  .footer-napis{
-    text-align: center;
-  }
-  .obrazek{
-    width: 400px !important;
-    height: 300px !important;
-  }
+    .footer-napis {
+        text-align: center;
+    }
+
+    .obrazek {
+        width: 400px !important;
+        height: 300px !important;
+    }
 }

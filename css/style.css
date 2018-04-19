@@ -18,34 +18,39 @@ body {
 }
 
 .margin-gora {
-  margin-top: 2rem;
+    margin-top: 2rem;
 }
 
 .logo {
-  width: 150px;
-  height: 150px;
+    width: 150px;
+    height: 150px;
 }
 
 @media (max-width: 768px) {
-  .gora{
-    margin-top: 1rem;
-  }
-  .margin-gora{
-    margin-top: 0rem;
-  }
-  .obrazek{
-    width: 400px !important;
-    height: 300px !important;
-  }
-  .footer-napis{
-    text-align: center;
-  }
+    .gora {
+        margin-top: 1rem;
+    }
+
+    .margin-gora {
+        margin-top: 0rem;
+    }
+
+    .obrazek {
+        width: 400px !important;
+        height: 300px !important;
+    }
+
+    .footer-napis {
+        text-align: center;
+    }
 }
+
 .blog-footer {
-  padding: 2.5rem 0;
-  background-color: #343a40;
+    padding: 2.5rem 0;
+    background-color: #343a40;
 }
+
 .mapa {
-  width: 450px;
-  height: 300px;
+    width: 450px;
+    height: 300px;
 }
