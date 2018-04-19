@@ -85,10 +85,10 @@
                                pattern="[A-ząśżźćęółń]+">
 
                     </li>
-					<li>
-						<label for="surname">Nazwisko:</label>
-						<input type="text" name="surname" id="surname" required maxlength="50" placeholder="Kowalski"
-								pattern="[A-ząśżźćęółń]+">
+                    <li>
+                        <label for="surname">Nazwisko:</label>
+                        <input type="text" name="surname" id="surname" required maxlength="50" placeholder="Kowalski"
+                               pattern="[A-ząśżźćęółń]+">
 
                     </li>
                     <li>
@@ -112,15 +112,14 @@
                     </li>
 
                     <li>
-                        <label for="hair">Wybór usługi:</label>
-                        <select name="nazwaUsługi">
-                          <?php
-                            $link = mysqli_connect('localhost','root','baza_Salon_Fryzjerski') or die ('Błąd: Nie można połączyć z bazą danych!!');
+                        <label for="nazwaUsługi">Wybór usługi:</label>
+                        <select id="nazwaUsługi" name="nazwaUsługi"> <!-- TODO: Fix php scripts -->
+                            <?php
+                            $link = mysqli_connect('localhost', 'root', 'baza_Salon_Fryzjerski') or die ('Błąd: Nie można połączyć z bazą danych!!');
                             $zapytanie = $link->query("SELECT * FORM Usługi");
-                            while($Usługi = mysqli_fetch_array($zapytanie))
-                            {
-                              echo '<option value="'.$Usługi['Usługi'].'">'.$Usługi['Usługi'].'</option>;
-                            }
+                            while ($Uslugi = mysqli_fetch_array($zapytanie)) {
+                                echo '<option value="' . $Uslugi['Uslugi'] . '">' . $Uslugi['Uslugi'] . '</option>;
+                            };
                             ?>
                         </select>
                     </li>
@@ -131,7 +130,7 @@
 
 					<li>
 					<label for="hour">Wybierz godzinę: </label>
-					<select required>
+					<select id="hour" name="hour" required>
 						<option value="" >Wybierz godzinę: </option>
 						<option value="10">10:00</option>
 						<option value="11">11:00</option>
