@@ -22,6 +22,11 @@ body {
   margin-top: 2rem;
 }
 
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
 @media (max-width: 768px) {
   .gora{
     margin-top: 1rem;
