@@ -36,17 +36,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Oferta</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="porady" data-toggle="dropdown" aria-haspopup="true"
-                       aria-expanded="false">
-                        Pielęgnacja
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="porady">
-                        <a class="dropdown-item" href="#">Porada 1</a>
-                        <a class="dropdown-item" href="#">Porada 2</a>
-                        <a class="dropdown-item" href="#">Porada 3</a>
-                        <a class="dropdown-item" href="#">Porada 4</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="pielegnacja.html">Pielęgnacja</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="galeria.html">Galeria</a>
