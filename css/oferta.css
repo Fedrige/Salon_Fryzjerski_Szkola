@@ -19,8 +19,11 @@ body {
     height: 300px;
 }
 
-.margin-gora {
-    margin-top: 2rem;
+.margin-dol {
+    margin-bottom: 2rem;
+}
+.linia-odd {
+    margin: 3rem;
 }
 
 @media (max-width: 768px) {
