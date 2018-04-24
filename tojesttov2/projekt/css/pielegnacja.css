@@ -1,0 +1,45 @@
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.9); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 19px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.gora {
+  margin-top: 2rem;
+}
+.blog-footer {
+  padding: 2.5rem 0;
+  background-color: #343a40;
+}
+.mapa {
+  width: 450px;
+  height: 300px;
+}
+.margin-gora {
+  margin-top: 2rem;
+}
+@media (max-width: 768px) {
+  .footer-napis{
+    text-align: center;
+  }
+  .margines{
+    margin-top: 2rem;
+  }
+}

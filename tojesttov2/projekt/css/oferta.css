@@ -1,0 +1,38 @@
+body {
+    background: url("../img/background.png") fixed;
+    background-size: cover;
+    padding-top: 6rem;
+}
+
+.lokitka {
+    font-family: 'Niconne', cursive;
+    font-size: 35px;
+}
+
+.blog-footer {
+    padding: 2.5rem 0;
+    background-color: #343a40;
+}
+
+.mapa {
+    width: 450px;
+    height: 300px;
+}
+
+.margin-dol {
+    margin-bottom: 2rem;
+}
+.linia-odd {
+    margin: 3rem;
+}
+
+@media (max-width: 768px) {
+    .footer-napis {
+        text-align: center;
+    }
+
+    .obrazek {
+        width: 400px !important;
+        height: 300px !important;
+    }
+}
