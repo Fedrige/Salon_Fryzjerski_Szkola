@@ -11,7 +11,7 @@ if(isset($_POST['name']) && strlen($_POST['name']) > 1){
     $e_mail = $_POST['email'];
     $data = $_POST['date'];
     $godzina = $_POST['hour'];
-
+}
 if($imie == '' || $nazwisko == '' || $telefon == '' || $e_mail == '' || $data == ''|| $godzina == '' )
 {
 	$blad = 1;
@@ -24,7 +24,7 @@ if($imie == '' || $nazwisko == '' || $telefon == '' || $e_mail == '' || $data ==
 		$link = new mysqli('localhost', 'root','','salon_fryzjerski') or die ('Błąd: Nie można połączyć z bazą danych!');
 		$link -> set_charset("utf-8");
 		$link -> query ("INSERT INTO klienci (idKlienci, imie, nazwisko, telefon, email, data, godzina, idusługi) VALUES ('', ".$imie.",".$nazwisko.",".$telefon.",".$e_mail.",".$data.",".$godzina.",'$3' )");
-
+	}
 
 ?>
 
