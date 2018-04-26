@@ -43,6 +43,9 @@ body {
     width: 150px;
     float: left;
 }
+.contact_form select {
+    width: 200px;
+}
 
 .contact_form input {
     width: 200px;
