@@ -54,7 +54,43 @@
 						</h2>
 					</li>
 					<li class="text-center">
-						Dziękujemy za rezerwację
+                        <?php
+                        session_start();
+                        ?>
+
+                        <?php
+                        $blad = 0;
+                        if(isset($_POST['name']) && strlen($_POST['name']) > 1){
+                            $imie = $_POST['name'];
+                            $nazwisko = $_POST['surname'];
+                            $telefon = $_POST['phone'];
+                            $e_mail = $_POST['email'];
+                            $data = $_POST['date'];
+                            $godzina = $_POST['hour'];
+                            $plec = $_POST['sex'];
+                            $usluga = $_POST['nazwaUslugi'];
+                        }
+                        if($imie == '' || $nazwisko == '' || $telefon == '' || $e_mail == '' || $data == ''|| $godzina == '' )
+                        {
+                            $blad = 1;
+                            $_SESSION['blad'] = 'Pola nie mogą być puste';
+//	header ('Location: zarezerwuj.html');
+                        }
+                        if($blad == 0)
+
+                        {
+                            $conn = new mysqli('localhost', 'root','','salon_fryzjerski');  // or die ('Błąd: Nie można połączyć z bazą danych!');
+                            $conn -> set_charset("utf-8");
+                            $sql = "INSERT INTO klienci (imie, nazwisko, telefon, email, data, godzina, iduslugi, plec) VALUES ('$imie', '$nazwisko' ,'$telefon','$e_mail','$data','$godzina','$usluga', '$plec')";
+                            if ($conn->query($sql) === TRUE) {
+                                echo "Dziękujemy za rezerwację";
+                            } else {
+                                echo "Error: " . $sql . "<br>" . $conn->error;
+                            }
+                            $conn->close();
+                        }
+
+                        ?>
 					</li>
 				</ul>
 			</form>

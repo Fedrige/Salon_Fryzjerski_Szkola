@@ -34,7 +34,7 @@
                     <a class="nav-link" href="galeria.html">Galeria</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="zarezerwuj.html">Zarezerwuj</a>
+                    <a class="nav-link" href="zarezerwuj.php">Zarezerwuj</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="kontakt.html">Kontakt</a>
@@ -52,24 +52,24 @@
         <div class="col-lg-4">
 
 
-            <form method="post" action="#" name="contact_form" class="contact_form">
+            <form method="post" action="akcjakontakt.php" name="contact_form" class="contact_form">
                 <ul>
                     <li>
                         <h2>Formularz kontaktowy</h2>
                     </li>
                     <li>
-                        <label for="imie">Imię</label>
-                        <input type="text" name="imie" id="imie" required maxlength="50" placeholder="Jan"
+                        <label for="name">Imię</label>
+                        <input type="text" name="name" id="name" required maxlength="50" placeholder="Jan"
                                pattern="[A-ząśżźćęółń]+">
                     </li>
                     <li>
-                        <label for="nazwisko">Nazwisko</label>
-                        <input type="text" name="nazwisko" id="nazwisko" required maxlength="50" placeholder="Kowalski"
+                        <label for="surname">Nazwisko</label>
+                        <input type="text" name="surname" id="surname" required maxlength="50" placeholder="Kowalski"
                                pattern="[A-ząśżźćęółń]+">
                     </li>
                     <li>
-                        <label for="tel">Tel kom.</label>
-                        <input type="text" name="tel" id="tel" required maxlength="11" placeholder="XXX-XXX-XXX"
+                        <label for="phone">Tel kom.</label>
+                        <input type="text" name="phone" id="phone" required maxlength="11" placeholder="XXX-XXX-XXX"
                                pattern="\d{3}-\d{3}-\d{3}">
                     </li>
                     <li>
